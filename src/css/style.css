@@ -22,6 +22,14 @@ header {
     overflow: hidden;
 }
 
+.a{
+    font-size: 1.1rem;
+}
+
+.a:hover{
+    color: yellow;
+}
+
 header::before {
     content: '';
     position: absolute;
@@ -109,6 +117,7 @@ nav {
     display: inline-block;
     background: rgba(255, 255, 255, 0.2);
     color: white;
+    font-size: 1.1rem;
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 50px;
@@ -122,6 +131,7 @@ nav {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: yellow;
 }
 
 /* Sections */
@@ -213,7 +223,7 @@ section {
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: transform 0.3s ease;
 }
 
@@ -284,6 +294,12 @@ section {
     color: #333;
 }
 
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
 .project-content p {
     color: #666;
     line-height: 1.6;
@@ -310,8 +326,12 @@ section {
     gap: 1rem;
 }
 
+
+
 .project-link {
     color: #333;
+    font-size: 1.2rem;
+    color: #667eea;
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
@@ -393,29 +413,12 @@ footer {
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 2rem;
-    opacity: 0.6;
+    /* opacity: 0.6; */
 }
 
-/* Scroll behavior */
-html {
-    scroll-behavior: smooth;
+.footer-name{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* Loading animation */
-.fade-in {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
