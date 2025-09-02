@@ -22,14 +22,6 @@ header {
     overflow: hidden;
 }
 
-.a {
-    font-size: 1.1rem;
-}
-
-.a:hover {
-    color: yellow;
-}
-
 .frontend{
     color: yellow;
     font-weight: 500;
@@ -68,6 +60,7 @@ nav {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -88,7 +81,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: rgba(255, 255, 255, 0.8);
+    background: yellow;
     transition: width 0.3s ease;
 }
 
@@ -119,6 +112,22 @@ nav {
     animation: typewriter 4s steps(12) 1s forwards, blink 0.8s reverse infinite;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icons{
+    display: flex;
+}
+
+.icons img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* Efeito de digitação */
@@ -170,6 +179,8 @@ nav {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     color: yellow;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Sections */
@@ -362,6 +373,7 @@ h4 {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .project-link {
