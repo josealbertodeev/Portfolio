@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1a365d 0%, #6b46c1 100%);
+    background: #0f172a;
     color: white;
     padding: 2rem 0;
     position: relative;
@@ -102,7 +102,6 @@ nav {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     /* Remove outras animações e foca só na digitação */
-    animation: fadeInUp 0.5s ease;
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -236,6 +235,8 @@ section {
     margin: 0 auto;
     transition: transform 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 2px solid rgba(16, 1, 1, 0.745);
+    animation: float 3s ease-in-out infinite;
 }
 
 .imagem-projeto {
@@ -391,7 +392,7 @@ h4 {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #1a365d 0%, #6b46c1 100%);
+    background: #0f172a;
     color: white;
     padding: 3rem 2rem 2rem;
 }
@@ -431,6 +432,7 @@ footer {
     font-size: 1.2rem;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    border: 2px solid rgba(251, 251, 251, 0.745);
 }
 
 .social-link:hover {
@@ -467,4 +469,16 @@ footer {
     color: #fff;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
